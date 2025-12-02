@@ -1,0 +1,529 @@
+/* ============================================
+   REUSABLE COMPONENTS
+   ============================================ */
+
+/* ==================== STATS COUNTER ==================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-2xl) 0;
+}
+
+.stat-card {
+    text-align: center;
+    padding: var(--space-lg);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--card-bg) 100%);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stat-number {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    /* Gradient text effect */
+    background: linear-gradient(135deg, var(--apple-blue), var(--apple-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* ==================== GLASS CARD EFFECT ==================== */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================== FLOATING ICONS IN HERO ==================== */
+.floating-icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Don't block clicks */
+    z-index: 1;
+}
+
+.floating-icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    color: var(--apple-blue);
+    /* Animation is in animations.css */
+}
+
+/* Different delays for each icon */
+.floating-icon:nth-child(1) { animation-delay: 0s; }
+.floating-icon:nth-child(2) { animation-delay: -5s; }
+.floating-icon:nth-child(3) { animation-delay: -10s; }
+.floating-icon:nth-child(4) { animation-delay: -15s; }
+.floating-icon:nth-child(5) { animation-delay: -3s; }
+.floating-icon:nth-child(6) { animation-delay: -8s; }
+
+/* ==================== GRADIENT MESH BACKGROUND ==================== */
+.gradient-mesh {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 122, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(88, 86, 214, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(52, 199, 89, 0.05) 0%, transparent 50%);
+    /* Animation is in animations.css */
+}
+
+/* ==================== PARALLAX BACKGROUND ==================== */
+.parallax-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-bg {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    opacity: 0.03;
+    z-index: 0;
+    pointer-events: none;
+    /* Pattern can be added via background-image */
+    background: 
+        repeating-linear-gradient(45deg, var(--text-primary), var(--text-primary) 1px, transparent 1px, transparent 10px),
+        repeating-linear-gradient(-45deg, var(--text-primary), var(--text-primary) 1px, transparent 1px, transparent 10px);
+}
+
+/* ==================== VIDEO BACKGROUND (Optional) ==================== */
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.95) 0%,
+        rgba(255, 255, 255, 0.85) 100%
+    );
+    z-index: -1;
+}
+
+/* ==================== CUSTOM CURSOR ==================== */
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--apple-blue);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transition: transform var(--transition-fast);
+    opacity: 0;
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--apple-blue);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transition: all 0.15s ease;
+    opacity: 0;
+}
+
+/* Show custom cursor only on desktop */
+@media (min-width: 1024px) {
+    .cursor-dot,
+    .cursor-outline {
+        opacity: 0.6;
+    }
+    
+    /* Hide default cursor on interactive elements */
+    body {
+        cursor: none;
+    }
+    
+    a, button {
+        cursor: none;
+    }
+}
+
+/* ==================== MOBILE SPECIFIC ==================== */
+@media (max-width: 768px) {
+    /* Hide floating icons on mobile for better performance */
+    .floating-icons {
+        display: none;
+    }
+    
+    /* Adjust stat cards for mobile */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-number {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* ==================== macOS SCREENSHOTS COMPONENT ==================== */
+
+/* Compact macOS Screenshots Grid */
+.macos-screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.macos-screenshots-grid .mac-window {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    background: #1e1e1e;
+}
+
+.macos-screenshots-grid .window-controls {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    background: #2d2d2d;
+}
+
+.macos-screenshots-grid .window-controls span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #555;
+}
+
+.macos-screenshots-grid .window-controls span:nth-child(1) { background: #ff5f56; }
+.macos-screenshots-grid .window-controls span:nth-child(2) { background: #ffbd2e; }
+.macos-screenshots-grid .window-controls span:nth-child(3) { background: #27c93f; }
+
+.macos-screenshots-grid .mac-window img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+
+/* ===================================Gallery hover effect ==============================*/
+/* Following below is used so that when we click on image we go into a modal gallery view */
+/* #app3Gallery .mac-window {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#app3Gallery .mac-window:hover {
+    transform: translateY(-4px);
+}
+
+/* // Lightbox
+.screenshot-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.screenshot-lightbox.active {
+    display: block;
+} */
+
+/* .lightbox-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.2s ease;
+} */
+
+/* .lightbox-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    max-width: 1200px;
+    width: calc(100% - 50px);
+    max-height: 90vh;
+    background: transparent;
+    border-radius: 12px;
+    animation: slideUp 0.3s ease;
+    display: flex;
+    flex-direction: column;
+} */
+
+.lightbox-close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    font-size: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    line-height: 1;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(90deg);
+}
+
+.lightbox-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex: 1;
+    min-height: 0;
+}
+
+.lightbox-image-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+}
+
+.mac-window-popup {
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    max-width: 100%;
+    max-height: 75vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.mac-window-popup img {
+    display: block;
+    max-width: 100%;
+    max-height: calc(75vh - 28px);
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.lightbox-arrow {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-arrow:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.1);
+}
+
+.lightbox-arrow:active {
+    transform: scale(0.95);
+}
+
+.lightbox-arrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+.lightbox-footer {
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+.lightbox-counter {
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .lightbox-dialog {
+        width: calc(100% - 20px);
+        max-height: 95vh;
+    }
+    
+    .lightbox-close {
+        top: -45px;
+        width: 36px;
+        height: 36px;
+        font-size: 28px;
+    }
+    
+    .lightbox-body {
+        gap: 10px;
+    }
+    
+    .lightbox-arrow {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-arrow svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .mac-window-popup {
+        max-height: 70vh;
+    }
+    
+    .mac-window-popup img {
+        max-height: calc(70vh - 28px);
+    }
+}
+
+
+.screenshot-lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    overflow: auto; /* Allow scrolling if needed */
+}
+
+.screenshot-lightbox.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.2s ease;
+}
+
+.lightbox-dialog {
+    position: relative; /* Changed from fixed */
+    max-width: 900px;
+    width: calc(100% - 40px);
+    max-height: 90vh;
+    background: transparent;
+    border-radius: 12px;
+    animation: slideUp 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    z-index: 1; /* Above backdrop */
+    margin: auto; /* This helps with centering */
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px); /* Simplified animation */
+        /* transform: translateX(-20px) */
+    }
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+        transform: translate(-50, 0)
+    }
+}

@@ -1,0 +1,164 @@
+/* ============================================
+   DARK MODE THEME
+   ============================================ */
+
+/* Dark mode color variables */
+[data-theme="dark"] {
+    --bg-primary: #000000;
+    --bg-secondary: #1D1D1F;
+    --bg-tertiary: #2D2D2F;
+    --text-primary: #F5F5F7;
+    --text-secondary: #86868B;
+    --border-color: #3D3D3F;
+    --card-bg: #1D1D1F;
+    
+    /* Shadows need to be lighter in dark mode */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ==================== NAVBAR DARK MODE ==================== */
+[data-theme="dark"] .navbar {
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom-color: var(--border-color);
+}
+
+/* ==================== HERO DARK MODE ==================== */
+[data-theme="dark"] .hero {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .hero-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.95) 0%,
+        rgba(0, 0, 0, 0.85) 100%
+    );
+}
+
+/* ==================== FLOATING ICONS DARK MODE ==================== */
+[data-theme="dark"] .floating-icon {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== GRADIENT MESH DARK MODE ==================== */
+[data-theme="dark"] .gradient-mesh {
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(0, 122, 255, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(88, 86, 214, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 40% 20%, rgba(52, 199, 89, 0.10) 0%, transparent 50%);
+}
+
+/* ==================== TIMELINE DARK MODE ==================== */
+[data-theme="dark"] .timeline-content {
+    background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .timeline-dot {
+    background: var(--bg-secondary);
+    border-color: var(--border-color);
+}
+
+/* ==================== BADGES DARK MODE ==================== */
+[data-theme="dark"] .badge-published {
+    background: rgba(52, 199, 89, 0.2);
+    color: var(--apple-green);
+}
+
+[data-theme="dark"] .badge-development {
+    background: rgba(255, 149, 0, 0.2);
+    color: var(--apple-orange);
+}
+
+[data-theme="dark"] .badge-ios,
+[data-theme="dark"] .badge-macos {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+/* ==================== FEATURES DARK MODE ==================== */
+[data-theme="dark"] .feature {
+    background: var(--bg-tertiary);
+}
+
+/* ==================== PHONE MOCKUP DARK MODE ==================== */
+[data-theme="dark"] .phone-mockup {
+    background: #1C1C1E; /* iOS dark mode gray */
+}
+
+/* ==================== MAC WINDOW DARK MODE ==================== */
+[data-theme="dark"] .mac-window {
+    background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .window-controls {
+    background: var(--bg-secondary);
+}
+
+/* ==================== TECH TAGS DARK MODE ==================== */
+[data-theme="dark"] .tech-tags span {
+    background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .tech-tags span:hover {
+    background: var(--apple-blue);
+    color: white;
+}
+
+/* ==================== COMPACT CARDS DARK MODE ==================== */
+[data-theme="dark"] .app-card-compact {
+    background: var(--bg-tertiary);
+}
+
+/* ==================== SKILLS DARK MODE ==================== */
+[data-theme="dark"] .skill-group {
+    background: var(--bg-tertiary);
+}
+
+[data-theme="dark"] .skill-group li {
+    border-bottom-color: var(--border-color);
+}
+
+/* ==================== STATS DARK MODE ==================== */
+[data-theme="dark"] .stat-card {
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+}
+
+/* ==================== GLASS CARDS DARK MODE ==================== */
+[data-theme="dark"] .glass-card {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==================== CONTACT LINKS DARK MODE ==================== */
+[data-theme="dark"] .contact-link {
+    background: var(--bg-tertiary);
+}
+
+/* ==================== PARALLAX BG DARK MODE ==================== */
+[data-theme="dark"] .parallax-bg {
+    opacity: 0.02; /* Even more subtle in dark mode */
+}
+
+/* ==================== THEME TOGGLE BUTTON ==================== */
+[data-theme="dark"] .theme-toggle button {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+/* ==================== SMOOTH TRANSITION BETWEEN THEMES ==================== */
+body,
+.navbar,
+.hero,
+.timeline-content,
+.feature,
+.skill-group,
+.stat-card,
+.app-card-compact,
+.contact-link,
+.theme-toggle button {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}

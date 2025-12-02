@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Nzimi - AI, IOS & MacOS Developer</title>
+    <meta name="description" content="AI, IOS and MacOS developer creating beautiful, intuitive applications">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ==================== SCROLL PROGRESS BAR ==================== -->
+    <div class="scroll-progress"></div>
+
+    <!-- ==================== CUSTOM CURSOR ==================== -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">Dominic Nzimi</div>
+            <ul class="nav-menu">
+                <li><a href="#apps">Apps</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Dark Mode Toggle Button -->
+            <div class="theme-toggle">
+                <button id="theme-btn" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero parallax-section">
+        <!-- Optional: Video Background (uncomment to use) -->
+        <!-- 
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="images/hero-background.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        -->
+
+        <!-- Parallax Background Pattern -->
+        <div class="parallax-bg"></div>
+
+        <!-- Gradient Mesh Background -->
+        <div class="gradient-mesh"></div>
+
+        <!-- Floating App Icons -->
+        <div class="floating-icons">
+            <div class="floating-icon" style="top: 10%; left: 10%;">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="floating-icon" style="top: 70%; left: 15%;">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="floating-icon" style="top: 20%; right: 15%;">
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+            <div class="floating-icon" style="top: 60%; right: 10%;">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="floating-icon" style="top: 40%; left: 5%;">
+                <i class="fa-brands fa-swift"></i>
+            </div>
+            <div class="floating-icon" style="top: 30%; right: 5%;">
+                <i class="fa-brands fa-apple"></i>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">Crafting experiences<br>for Apple platforms.</h1>
+            <p class="hero-subtitle fade-in-up delay-1">AI, IOS and MacOS developer focused on creating delightful,
+                user-centered applications.</p>
+            <a href="#apps" class="hero-cta fade-in-up delay-2">View Portfolio</a>
+        </div>
+    </section>
+
+    <!-- ==================== TIMELINE SECTION ==================== -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-heading">Development Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Published - Oct 2025</span>
+                        <h4>First App Launch</h4>
+                        <p>Successfully published my first MacOS app to the App Store</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">In Progress - Now</span>
+                        <h4>Building 4 New Apps</h4>
+                        <p>Currently developing multiple AI, IOS and MacOS applications</p>
+                    </div>
+                </div>
+                <div class="timeline-item future">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Coming Soon</span>
+                        <h4>Future Projects</h4>
+                        <p>More innovative apps in the pipeline</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== APPS SECTION ==================== -->
+    <section id="apps" class="apps-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container-large">
+
+            <!-- ========== PUBLISHED APP (Featured) ========== -->
+            <div class="app-showcase app-card-3d fade-in-scroll">
+                <div class="app-header">
+                    <div class="app-header-content">
+                        <div class="app-icon">
+                            <!-- Replace with your app icon -->
+                            <img src="images/app1/icon.png" alt="App Name"
+                                onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-desktop\'></i>'">
+                        </div>
+                        <div class="app-info">
+                            <div class="app-badges">
+                                <span class="badge badge-published">Published</span>
+                                <span class="badge badge-macos">macOS</span>
+                            </div>
+                            <h2 class="app-name">LocalMind-AI</h2>
+                            <p class="app-tagline">Private AI for your Computer</p>
+                        </div>
+                    </div>
+                    <div class="app-links-header">
+                        <a href="https://apps.apple.com/gb/app/localmind-ai-assistant/id6754166903?mt=12"
+                            class="store-button" target="_blank">
+                            <i class="fa-brands fa-app-store-ios"></i>
+                            <span>App Store</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="app-description">
+                    <p>Experience lightning-fast Al assistance without compromising privacy. Powered by local LLM
+                        on-device models-no cloud, no data collection, pure local power.
+                        LocalMind - Your Private Al Assistant
+                        Work smarter with Al that respects your privacy. LocalMind uses on-device machine learning to
+                        provide instant text generation, email drafting, and code analysis-all without sending your data
+                        to the cloud</p>
+                </div>
+
+                <!-- Feature Highlights -->
+                <div class="app-features">
+                    <div class="feature">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Fast & Responsive</h4>
+                        <p>Optimized performance for smooth interactions</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-palette"></i>
+                        <h4>Beautiful Design</h4>
+                        <p>Clean interface following Apple HIG</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fa-solid fa-lock"></i>
+                        <h4>Privacy First</h4>
+                        <p>Your data stays on your device</p>
+                    </div>
+                </div>
+
+                <!-- macOS Screenshot Gallery with Window Chrome -->
+                <div class="macos-screenshots-grid">
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app1/screenshot1.png" alt="macOS Screenshot 1"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+1'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app1/screenshot2.png" alt="macOS Screenshot 2"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+2'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app1/screenshot3.png" alt="macOS Screenshot 3"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+3'">
+                    </div>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="tech-stack">
+                    <h4>Built with</h4>
+                    <div class="tech-tags">
+                        <span>Swift</span>
+                        <span>SwiftUI</span>
+                        <span>AppKit</span>
+                        <span>CoreData</span>
+                        <span>Combine</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="section-divider"></div>
+
+            <!-- ========== APP IN DEVELOPMENT 1 ========== -->
+            <div class="app-showcase app-card-3d fade-in-scroll">
+                <div class="app-header">
+                    <div class="app-header-content">
+                        <div class="app-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="app-info">
+                            <div class="app-badges">
+                                <span class="badge badge-development">In Development</span>
+                                <span class="badge badge-ios">iOS</span>
+                            </div>
+                            <h2 class="app-name">Coming Soon</h2>
+                            <p class="app-tagline">Pre-match sports prediction using AI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-description">
+                    <p>Sports Prediction app to forecast likely match outcomes based on Historical match analysis
+                        combined with the power of AI.
+                        Features include Score matrix, Accumulator Recommendations, and Expected Match Winner.</p>
+                </div>
+
+                <!-- User Flow Demo (GIF) -->
+                <!-- <div class="user-flow">
+                    <h4 class="flow-title">User Flow Preview</h4>
+                    <div class="flow-demo">
+                        <img src="images/app2/demo.gif" alt="User flow demo" 
+                             onerror="this.parentElement.innerHTML='<div class=\'placeholder-demo\'><i class=\'fa-solid fa-play-circle\'></i><p>Demo coming soon</p></div>'">
+                    </div>
+                </div> -->
+
+                <!-- <div class="user-flow">
+                    <h4 class="flow-title">User Flow Preview</h4>
+                    <div class="flow-demo">
+                        <video src="images/app2/demo.mp4" poster="images/app2/demo-poster.jpg" autoplay loop muted
+                            playsinline preload="metadata">
+                            //-- Fallback for very old browsers 
+                            <img src="images/app2/demo-poster.jpg" alt="User flow demo">
+                        </video>
+                    </div>
+                </div> -->
+
+                <!-- Screenshots -->
+                <!-- <div class="screenshot-gallery">
+                    <div class="gallery-container">
+                        <div class="phone-mockup">
+                            <img src="images/app2/screenshot1.png" alt="Screenshot 1" 
+                                 onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Work+in+Progress'">
+                        </div>
+                        <div class="phone-mockup">
+                            <img src="images/app2/screenshot2.png" alt="Screenshot 2" 
+                                 onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Work+in+Progress'">
+                        </div>
+                        <div class="phone-mockup">
+                            <img src="images/app2/screenshot3.png" alt="Screenshot 3" 
+                                 onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Work+in+Progress'">
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <div class="user-flow-section">
+                    <!-- Left Side: Video Demo -->
+                    <div class="user-flow">
+                        <h4 class="flow-title">User Flow Preview</h4>
+                        <div class="flow-demo">
+                            <video src="images/app2/demo.mp4" poster="images/app2/demo-poster.jpg" autoplay loop muted
+                                playsinline preload="metadata">
+                                <img src="images/app2/demo-poster.jpg" alt="User flow demo">
+                            </video>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Screenshots Slideshow -->
+                    <div class="screenshot-gallery">
+                        <h4 class="flow-title">App Screenshots</h4>
+                        <div class="slideshow-container">
+                            <div class="phone-mockup active">
+                                <img src="images/app2/screenshot1.png" alt="Screenshot 1"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+1'">
+                            </div>
+                            <div class="phone-mockup">
+                                <img src="images/app2/screenshot2.png" alt="Screenshot 2"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+2'">
+                            </div>
+                            <div class="phone-mockup">
+                                <img src="images/app2/screenshot3.png" alt="Screenshot 3"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+3'">
+                            </div>
+
+                            <div class="phone-mockup">
+                                <img src="images/app2/screenshot4.png" alt="Screenshot 4"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+3'">
+                            </div>
+
+                            <div class="phone-mockup">
+                                <img src="images/app2/screenshot5.png" alt="Screenshot 5"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+3'">
+                            </div>
+
+                            <div class="phone-mockup">
+                                <img src="images/app2/screenshot6.png" alt="Screenshot 6"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+3'">
+                            </div>
+
+                            <div class="phone-mockup">
+                                <img src="images/app2/screenshot7.png" alt="Screenshot 7"
+                                    onerror="this.src='https://via.placeholder.com/250x541/f5f5f7/666?text=Screenshot+3'">
+                            </div>
+
+                            <!-- Navigation Arrows -->
+                            <button class="slide-arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+                            <button class="slide-arrow next" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+
+                        <!-- Dot Indicators -->
+                        <div class="slide-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <h4>Built with</h4>
+                    <div class="tech-tags">
+                        <span>Swift</span>
+                        <span>SwiftUI</span>
+                        <span>Swift Charts</span>
+                        <span>App Intents</span>
+                        <span>WidgetKit</span>
+                        <span>AWS</span>
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- ========== MACOS APP IN DEVELOPMENT ========== -->
+            <div class="app-showcase app-card-3d fade-in-scroll">
+                <div class="app-header">
+                    <div class="app-header-content">
+                        <div class="app-icon">
+                            <!-- <i class="fa-solid fa-desktop"></i> -->
+                            <!-- <div class="app-icon">
+                Replace with your app icon
+                <img src="images/app3/icon.jpg" alt="Odds Dashboard" onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-desktop\'></i>'">
+            </div> -->
+                            <div class="app-icon">
+                                <img src="images/app3/icon.jpg" alt="App Name" data-light="images/app3/icon.jpg"
+                                    data-dark="images/app3/icon2.jpg"
+                                    onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-desktop\'></i>'">
+                            </div>
+
+                        </div>
+                        <div class="app-info">
+                            <div class="app-badges">
+                                <span class="badge badge-development">In Development</span>
+                                <span class="badge badge-macos">macOS</span>
+                            </div>
+                            <h2 class="app-name">Odds Dashboard</h2>
+                            <p class="app-tagline">Productivity tool for Mac</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="app-description">
+                    <p>A Native productivity tool for analysing Football matches in real-time and providing
+                        minute-by-minute predictions on likely match outcome.
+                        Uses advanced AI models to forecast match outcome based live event match data.</p>
+                </div>
+
+                <!-- macOS Screenshot with Window Chrome
+                <div class="macos-preview">
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot1.png" alt="macOS Screenshot" 
+                             onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=macOS+Preview'">
+                    </div>
+                </div> -->
+
+
+                <!-- macOS Screenshot Gallery with Window Chrome -->
+                <!-- <div class="macos-screenshots-grid">
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot1.png" alt="macOS Screenshot 1" 
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+1'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot2.png" alt="macOS Screenshot 2" 
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+2'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot3.png" alt="macOS Screenshot 3" 
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+3'">
+                    </div>
+
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot4.png" alt="macOS Screenshot 3" 
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+3'">
+                    </div>
+
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot5.png" alt="macOS Screenshot 3" 
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+3'">
+                    </div>
+                </div>
+
+
+
+                <div class="tech-stack">
+                    <h4>Built with</h4>
+                    <div class="tech-tags">
+                        <span>Swift</span>
+                        <span>SwiftData</span>
+                        <span>Core ML</span>
+                        <span>Combine</span>
+                        <span>Foundations</span>
+                    </div>
+                </div>
+            </div> -->
+
+                <!-- macOS Screenshot Gallery with Window Chrome -->
+                <div class="macos-screenshots-grid" id="app3Gallery">
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot1.png" alt="macOS Screenshot 1"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+1'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot2.png" alt="macOS Screenshot 2"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+2'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot3.png" alt="macOS Screenshot 3"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+3'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot4.png" alt="macOS Screenshot 4"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+4'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot5.png" alt="macOS Screenshot 5"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+5'">
+                    </div>
+                </div>
+
+                <!-- Lightbox Modal for App3 Gallery -->
+                <div id="app3Lightbox" class="screenshot-lightbox">
+                    <div class="lightbox-backdrop"></div>
+                    <div class="lightbox-dialog">
+                        <button class="lightbox-close" aria-label="Close">&times;</button>
+                        <div class="lightbox-body">
+                            <button class="lightbox-arrow lightbox-arrow-left" aria-label="Previous">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <div class="lightbox-image-wrapper">
+                                <div class="mac-window-popup">
+                                    <div class="window-controls">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <img id="app3LightboxImage" src="" alt="">
+                                </div>
+                            </div>
+                            <button class="lightbox-arrow lightbox-arrow-right" aria-label="Next">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="lightbox-footer">
+                            <span class="lightbox-counter"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+
+                <!-- ========== MACOS APP IN DEVELOPMENT ========== -->
+                <div class="app-showcase app-card-3d fade-in-scroll">
+                    <div class="app-header">
+                        <div class="app-header-content">
+                            <div class="app-icon">
+
+                                <div class="app-icon">
+                                    <img src="images/app4/icon.png" alt="App Name" data-light="images/app4/icon.png"
+                                        data-dark="images/app4/icon.png"
+                                        onerror="this.parentElement.innerHTML='<i class=\'fa-solid fa-desktop\'></i>'">
+                                </div>
+
+                            </div>
+                            <div class="app-info">
+                                <div class="app-badges">
+                                    <span class="badge badge-development">In Development</span>
+                                    <span class="badge badge-macos">macOS</span>
+                                </div>
+                                <h2 class="app-name">NPI</h2>
+                                <p class="app-tagline">Forecast Stock & Crypto movements using Advanced Algorithms</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app-description">
+                        <p>A Native productivity tool for growing your stock & crypto portfolio.
+                            Provides a range of features including Optimal Dividend Portfolio rebalancer anlysis, AI
+                            powered predictions of the next 30 days price movements for 1000s of stocks, Biotech
+                            detailed analysis of scheduled and upcoming trials in progress tracker and alot more.</p>
+                    </div>
+
+
+                    <!-- macOS Screenshot Gallery with Window Chrome -->
+                    <div class="macos-screenshots-grid" id="app3Gallery">
+                        <div class="mac-window">
+                            <div class="window-controls">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <img src="images/app4/screenshot1.png" alt="macOS Screenshot 1"
+                                onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+1'">
+                        </div>
+                        <div class="mac-window">
+                            <div class="window-controls">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <img src="images/app4/screenshot2.png" alt="macOS Screenshot 2"
+                                onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+2'">
+                        </div>
+                        <!-- <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot3.png" alt="macOS Screenshot 3"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+3'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot4.png" alt="macOS Screenshot 4"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+4'">
+                    </div>
+                    <div class="mac-window">
+                        <div class="window-controls">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <img src="images/app3/screenshot5.png" alt="macOS Screenshot 5"
+                            onerror="this.src='https://via.placeholder.com/1000x600/f5f5f7/666?text=Screenshot+5'">
+                    </div> -->
+                    </div>
+
+                    <!-- Lightbox Modal for App3 Gallery -->
+                    <div id="app3Lightbox" class="screenshot-lightbox">
+                        <div class="lightbox-backdrop"></div>
+                        <div class="lightbox-dialog">
+                            <button class="lightbox-close" aria-label="Close">&times;</button>
+                            <div class="lightbox-body">
+                                <button class="lightbox-arrow lightbox-arrow-left" aria-label="Previous">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <div class="lightbox-image-wrapper">
+                                    <div class="mac-window-popup">
+                                        <div class="window-controls">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                        <img id="app3LightboxImage" src="" alt="">
+                                    </div>
+                                </div>
+                                <button class="lightbox-arrow lightbox-arrow-right" aria-label="Next">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="lightbox-footer">
+                                <span class="lightbox-counter"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="section-divider"></div>
+
+
+
+
+
+
+
+                    <!-- ========== COMPACT GRID FOR REMAINING APPS ========== -->
+                    <div class="apps-grid">
+
+                        <!-- App 4 -->
+                        <!-- <div class="app-card-compact app-card-3d fade-in-scroll">
+                        <div class="app-card-header">
+                            <div class="app-icon-small">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <span class="badge badge-development">In Development</span>
+                        </div>
+                        <h3>App Name 4</h3>
+                        <p class="card-description">Brief description of this app and what problem it solves for users.
+                        </p>
+                        <div class="card-preview">
+                            <img src="images/app4/preview.png" alt="Preview"
+                                onerror="this.src='https://via.placeholder.com/300x200/f5f5f7/666?text=Preview'">
+                        </div>
+                        <div class="tech-tags-small">
+                            <span>Swift</span>
+                            <span>AVFoundation</span>
+                            <span>Vision</span>
+                        </div>
+                    </div> -->
+
+                        <!-- App 5 -->
+                        <div class="app-card-compact app-card-3d fade-in-scroll">
+                            <div class="app-card-header">
+                                <div class="app-icon-small">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                </div>
+                                <span class="badge badge-development">In Development</span>
+                            </div>
+                            <h3>Fundamental AI</h3>
+                            <p class="card-description">Perform Fundamental Analysis on any publically trading stock by
+                                leveraging on-device LLMs to provide Fundamental Score. Perfect Tool for combining if
+                                you are a technical trader.
+                            </p>
+                            <div class="card-preview">
+                                <img src="images/app5/preview.png" alt="Preview"
+                                    onerror="this.src='https://via.placeholder.com/300x200/f5f5f7/666?text=Preview'">
+                            </div>
+                            <div class="tech-tags-small">
+                                <span>Swift</span>
+                                <span>Ollama</span>
+                                <span>Python</span>
+                            </div>
+                        </div>
+
+                        <!-- App 6 -->
+                        <!-- <div class="app-card-compact app-card-3d fade-in-scroll">
+                            <div class="app-card-header">
+                                <div class="app-icon-small">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+                                <span class="badge badge-development">In Development</span>
+                            </div>
+                            <h3>App Name 6</h3>
+                            <p class="card-description">Brief description of this app and what problem it solves for
+                                users.
+                            </p>
+                            <div class="card-preview">
+                                <img src="images/app6/preview.png" alt="Preview"
+                                    onerror="this.src='https://via.placeholder.com/300x200/f5f5f7/666?text=Preview'">
+                            </div>
+                            <div class="tech-tags-small">
+                                <span>Swift</span>
+                                <span>HealthKit</span>
+                                <span>SwiftUI</span>
+                            </div>
+                        </div> -->
+
+                    </div>
+
+                </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section parallax-section">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <h2 class="section-heading fade-in-scroll">About Me</h2>
+
+            <!-- Stats Counter -->
+            <div class="stats-grid fade-in-scroll">
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">Apps Built</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Published</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">In Development</div>
+                </div>
+                <div class="stat-card glass-card">
+                    <div class="stat-number" data-target="1000">0</div>
+                    <div class="stat-label">Hours Coded</div>
+                </div>
+            </div>
+
+            <!-- About Text -->
+            <div class="about-content fade-in-scroll">
+                <p class="about-text">
+                    I'm a passionate AI, IOS and MacOS developer with a focus on creating
+                    intuitive, beautiful applications that solve real problems. My approach
+                    combines clean code, thoughtful design, and attention to detail.
+                </p>
+                <p class="about-text">
+                    With expertise in Swift and SwiftUI, I'm constantly exploring new ways
+                    to leverage Apple's frameworks to build exceptional user experiences.
+                </p>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-container fade-in-scroll">
+                <div class="skill-group glass-card">
+                    <h3><i class="fa-solid fa-code"></i> Languages</h3>
+                    <ul>
+                        <li>Swift</li>
+                        <li>Objective-C</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <h3><i class="fa-solid fa-hammer"></i> Frameworks</h3>
+                    <ul>
+                        <li>SwiftUI</li>
+                        <li>SwiftData</li>
+                        <li>Combine</li>
+                        <li>Core ML</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <h3><i class="fa-solid fa-toolbox"></i> Tools & Services</h3>
+                    <ul>
+                        <li>Xcode</li>
+                        <li>Git & GitHub</li>
+                        <li>TestFlight</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+                <div class="skill-group glass-card">
+                    <h3><i class="fa-solid fa-toolbox"></i> AI</h3>
+                    <ul>
+                        <li>Tensorflow</li>
+                        <li>PyTorch</li>
+                        <li>Classical & Deep Learning</li>
+                        <li>LLMs (Gemini, ChatGPT, Claude, etc)</li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-heading fade-in-scroll">Let's Connect</h2>
+            <p class="contact-intro fade-in-scroll">
+                I'm currently seeking opportunities to work on innovative projects.
+                Feel free to reach out if you'd like to collaborate or just chat about development.
+            </p>
+            <div class="contact-methods fade-in-scroll">
+                <a href="mailto:dominic.nzimi@hotmail.com" class="contact-link glass-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <!-- <span>your.email@example.com</span> -->
+                </a>
+                <a href="https://github.com/Dom88Finch" class="contact-link glass-card" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    <!-- <span>GitHub</span> -->
+                </a>
+
+                <a href="https://uk.linkedin.com/in/dominic-nzimi-917677192" class="contact-link glass-card"
+                    target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <!-- <span>LinkedIn</span> -->
+                </a>
+                <!-- <a href="https://twitter.com/yourusername" class="contact-link glass-card" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>Twitter</span>
+                </a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Dominic Nzimi. Designed and built with Swift in mind.</p>
+        </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT FILES ==================== -->
+    <script src="js/main.js"></script>
+    <script src="js/dark-mode.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/stats-counter.js"></script>
+    <script src="js/cursor.js"></script>
+
+</body>
+
+</html>
